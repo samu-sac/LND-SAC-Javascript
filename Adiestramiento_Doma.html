@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Adiestramiento_Doma.html</title>
+        <link rel="stylesheet" type="text/css" href="Estilos_12_SamuelAbreu.css">
+    </head>
+    <body>
+        <header>
+            <h3>ARK Survival Evolved</h3>
+            <form>
+                
+            Página creada por: Samuel Abreu. <input type="search" placeholder="Barra de búsqueda"><button>Buscar</button>
+            </form>    
+        </header>
+        <section>
+            <div class="menus">
+                <h3>Interés.</h3>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="SubirDeNivel.html">Subir de nivel</a></li>
+                    <li><a href="Adiestramiento_Doma.html">Adiestramiento y doma</a></li>
+                    <li><a href="Comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+            </section>
+        <aside>
+            <div id="FondoTexto">
+                <h1 class="TitulosSec">Adiestramiento/Doma</h1>
+                <div id="Indice">
+                    <h2>Índice.</h2>
+                    <ul>
+                        <li><a href="#idAdiestramientoDoma">Adiestramiento/Domesticado</a></li>
+                        <li><a href="#idFundamento">Fundamentos básicos del domesticado</a></li>
+                        <li><a href="#idEfectividad">Efectividad de domesticación</a></li>
+                    </ul>
+
+                    <button onclick="aumentarTamañoDiv()">Aumentar tamaño de div</button>
+                    <button onclick="restaurarTamaño()">Restaurar tamaño</button>
+                    
+                </div>
+                <div id="idAdiestramientoDoma">
+                    <h3>Adiestramiento/Domesticado</h3>
+                    Domesticar (Domestication en la versión original del juego) es el proceso de convertir a una Criatura salvaje en una bestia útil para beneficio del jugador. Las criaturas domesticadas tienen muchas ventajas que hacen la vida mas fácil en La Isla. Algunas criaturas permiten al jugador recolectar recursos de forma mas eficiente que a mano o con herramientas, mientras que otras tienen una capacidad de carga increíble, que servirá para transportar grandes cantidades de recursos o llevarlos en una batalla. Sin embargo, antes de que una criatura esté domesticada, debe pasar primero por el proceso de domesticado. De forma adicional, algunas criaturas requieren de una montura para ofrecer todo su potencial.
+                </div>
+                <div id="idFundamento">
+                    <h3>Fundamentos básicos del domesticado</h3>
+                    <h4>Mediante tranquilizantes</h4>
+                    1.  Primero, debes dejar inconsciente a la criatura en cuestión.<br>
+                    2.  Una vez que la criatura esté inconsciente, abre su inventario y dale de comer un alimento apropiado arrastrando comida a su inventario y esperando a que la criatura se la coma. La comida necesaria para domarlo variará según la criatura que estés tratando de domar. Mantenga mucha comida en el inventario del animal mientras lo domestica; si la criatura se queda sin comida, la barra de domesticación comenzará a bajar hasta que tenga más comida. Alimentarlos a la fuerza con algo que no sea Narcoberries, Bio Toxin o Narcotic satisfará su hambre pero no afectará la barra de domesticación, lo que hará que la domesticación tarde más tiempo.<br>
+                    3.  Mantén a la criatura inconsciente durante todo el proceso. La barra de Inconsciente disminuye con la Inconsciencia de la criatura, y se puede rellenar con Narcoberries o Narcotic. Narcoberries aumentará el letargo en 8 puntos durante 3 segundos, y Narcotic lo aumentará en 40 puntos durante 16 segundos. También detiene la lucha de la criatura contra el letargo en este tiempo, por lo que el letargo no caerá además del levantamiento. La criatura no comerá voluntariamente estos elementos, por lo que debe alimentarse a la fuerza presionando la tecla de uso en el inventario de criaturas al pasar el mouse sobre el elemento.                       
+                    <h4>Domesticado no violento</h4>
+                    Las siguientes criaturas son, actualmente, las únicas que pueden domesticarse de forma no violenta: Araneo, Arthropluera, Basilosaurio, Chalicotherium, Escarabajo Pelotero, Abeja Gigante, Gigantopithecus, Ictiosaurio, Listrosaurio, Manta, Mesopithecus, Moschops, Onyc, Bruite y Mantis. El Diplodocus también puede domesticarse de manera no violenta, aunque cuenta con una manera violenta para hacerlo.<br>
+                    1. Coloque la comida que planea alimentar a la criatura en la ranura del extremo derecho de su barra de acceso rápido.<br>
+                    2. Acércate a la criatura y presiona la tecla de uso para alimentarla cuando se te solicite.<br>
+                    3. Espera a que la criatura tenga suficiente hambre para volver a comer. Esto puede tomar diferentes cantidades de tiempo dependiendo de la criatura en cuestión y la comida que le estés dando.<br>
+                    4. Repite este proceso hasta rellenar la barra de domesticado.
+                </div>
+                <div id="idEfectividad">
+                    <h3>Efectividad de domesticación</h3>
+                    La eficacia de domesticación indica la cantidad de bonificación que obtiene la criatura una vez que se domestica con éxito. No tiene ningún efecto sobre la velocidad de domesticación del dinosaurio. La efectividad de domesticación inicial es del 100% y disminuye cada vez que la criatura come la comida que queda en su inventario o recibe daño mientras está inconsciente. La disminución de la eficacia de domesticación es recíproca, lo que significa que cuanto menor es, menos cae.<br>
+                    Alimentar a una criatura con su comida preferida no solo la domesticará más rápido, sino que también te recompensará con un mayor porcentaje de eficacia de domesticación. La mayoría de las criaturas también tienen una croqueta preferida, que será el alimento de domesticación más rápido y solo disminuirá ligeramente la eficacia de domesticación. La eficacia de domesticación máxima posible es del 99,9 %. (Nota al margen: la eficiencia no es sinónimo de eficacia. La eficiencia (cuán económico es un método) no se tiene en cuenta para la eficacia de domesticación).
+                </div>
+            </div>
+        </aside>
+        <script>
+        function aumentarTamañoDiv() {
+            var elementosDiv = document.getElementsByTagName("div");
+
+            for (var i = 0; i < elementosDiv.length; i++) {
+            var tamañoActual = parseFloat(window.getComputedStyle(elementosDiv[i], null).getPropertyValue('font-size'));
+            var nuevoTamaño = tamañoActual * 1.3;
+            elementosDiv[i].style.fontSize = nuevoTamaño + 'px';
+            }
+            }
+
+            function restaurarTamaño() {
+            var elementos = document.getElementsByTagName("*");
+            for (var i = 0; i < elementos.length; i++) {
+            elementos[i].style.fontSize = null;
+            }
+            }
+        </script>  
+
+
+
+    </body>   
+</html>
+<!--ADIESTRAMIENTO, ENGRAMAS, EFECTOS DE ESTADO Y SUBIR DE NIVEL        
+https://ark.fandom.com/es/wiki/Subir_de_nivel
+https://ark.fandom.com/es/wiki/Adiestramiento/Domesticado
+https://ark.fandom.com/es/wiki/Efectos_de_estado
+https://ark.fandom.com/es/wiki/Engramas
+https://ark.fandom.com/es/wiki/ARK_Survival_Evolved_Wiki """"INICIOOOOO""""
+-->

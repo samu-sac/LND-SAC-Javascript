@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Comunidad.html</title>
+        <link rel="stylesheet" type="text/css" href="Estilos_12_SamuelAbreu.css">
+    </head>
+    <body>
+        <header>
+            <h3>ARK Survival Evolved</h3>
+            <form>
+                
+            Página creada por: Samuel Abreu. <input type="search" placeholder="Barra de búsqueda"><button>Buscar</button>
+            </form>    
+        </header>
+        <section>
+            <div class="menus">
+                <h3>Interés.</h3>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="SubirDeNivel.html">Subir de nivel</a></li>
+                    <li><a href="Adiestramiento_Doma.html">Adiestramiento y doma</a></li>
+                    <li><a href="Comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+            </section>
+        <aside>
+            <div id="FondoTexto">
+                <h1 class="TitulosSec">Opinion de la comunidad</h1>
+                A continuación se recogen datos de las distintas experiencias de los usuarios de Ark Survival Evolved para poder realizar estadíticas y análisis de las diversas preferencias y problemas de los jugadores. <br><br>
+                
+                <button onclick="aumentarTamañoDiv()">Aumentar tamaño de div</button>
+                <button onclick="restaurarTamaño()">Restaurar tamaño</button>
+                <br><br>
+               <table>
+                    <form>
+                        Nombre de Usuario: <input type="text" name="nombre"><br>
+                        Correo electronico de contacto: <input type="email" placeholder="ejemplo@correo.com"><br>
+                        Por favor cuente su anecdota o problema que ha tenido en su experiencia de juego: <br> <textarea name="" id="" cols="30" rows="10"></textarea><br>
+                        <label for="dinosaurios">Seleccione su dinosaurio favorito:</label>
+                        <select id="dinosaurios" name="dinosaurios">
+                            <option value="1">Tyrannosaurus Rex</option>
+                            <option value="2">Triceratops</option>
+                            <option value="3">Velociraptor</option>
+                            <option value="4">Stegosaurus</option>
+                            <option value="5">Brachiosaurus</option>
+                        </select>
+                        <br>
+                        <input type="submit">
+                    </form>
+                </table>
+            </div>
+            <script>
+                function aumentarTamañoDiv() {
+                    var elementosDiv = document.getElementsByTagName("div");
+        
+                    for (var i = 0; i < elementosDiv.length; i++) {
+                    var tamañoActual = parseFloat(window.getComputedStyle(elementosDiv[i], null).getPropertyValue('font-size'));
+                    var nuevoTamaño = tamañoActual * 1.3;
+                    elementosDiv[i].style.fontSize = nuevoTamaño + 'px';
+                    }
+                    }
+        
+                    function restaurarTamaño() {
+                    var elementos = document.getElementsByTagName("*");
+                    for (var i = 0; i < elementos.length; i++) {
+                    elementos[i].style.fontSize = null;
+                    }
+                    }
+                </script>  
+             </body>   
+        </html>
+<!--ADIESTRAMIENTO, ENGRAMAS, EFECTOS DE ESTADO Y SUBIR DE NIVEL        
+https://ark.fandom.com/es/wiki/Subir_de_nivel
+https://ark.fandom.com/es/wiki/Adiestramiento/Domesticado
+https://ark.fandom.com/es/wiki/Efectos_de_estado
+https://ark.fandom.com/es/wiki/Engramas
+https://ark.fandom.com/es/wiki/ARK_Survival_Evolved_Wiki """"INICIOOOOO""""
+-->

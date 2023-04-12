@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <title>Inicio_10_Samuel.html</title>
+        <link rel="stylesheet" type="text/css" href="Estilos_12_SamuelAbreu.css">
+    </head>
+    <body>
+        <header>
+            <h3>ARK Survival Evolved</h3>
+            <form>
+                
+            Página creada por: Samuel Abreu. <input type="search" placeholder="Barra de búsqueda"><button>Buscar</button>
+            </form>    
+        </header>
+        <section>
+            <div class="menus">
+                <h3>Interés.</h3>
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li><a href="SubirDeNivel.html">Subir de nivel</a></li>
+                    <li><a href="Adiestramiento_Doma.html">Adiestramiento y doma</a></li>
+                    <li><a href="Comunidad.html">Comunidad</a></li>
+                </ul>
+            </div>
+        </section>
+        <aside>
+            <img src="IMG/logo_ark.png" id="logo">
+            <button id="boton1" class="ocultvisual" onclick="mostrar();">Mostrar imagen</button>
+            <button id="boton2" class="ocultvisual" onclick="ocultar();">Ocultar imagen</button>
+            <div id="FondoTexto">
+                <h1 class="TitulosSec">Inicio</h1>
+                
+                <button onclick="cambiarColorH1()">Cambiar el color del titulo de manera aleatoria</button>
+                <button onclick="cambiarColorAleatorio()">Cambiar color de fondo aleatoriamente</button>
+
+                <h3>Bienvenido a la WikiFan de ARK Survival Evolved hecha por samuel</h3>
+                <h4>¿Que es ARK: Survival Evolved?</h4>
+                Eres un hombre o mujer desnudo/a en una isla desconocida llamada ARK. Lucha para no morir congelado o de hambre, y mientras tanto utiliza tus habilidades y tu astucia para matar o domesticar y montar la plétora de dinosaurios y otras criaturas primitivas que habitan en esta tierra extraña. Caza, recolecta recursos, crea objetos, cultiva, investiga tecnologías y construye refugios para soportar el clima y almacenar objetos de valor, todo mientras formas equipo con (o contra) cientos de otros jugadores para sobrevivir, dominar, saber más del lugar... ¡y escapar de él!<br>
+                El juego se lanzó el 29 de agosto de 2017, tras dos años en 'Acceso Anticipado', y está disponible en Steam, la tienda Xbox Live, y PlayStation 4 con continuas actualizaciones.<br>
+                <h4>Características de ARK</h4>
+                Comida, agua, temperatura y clima<br>
+                Planta, cultiva y cosecha.<br>
+                Domestica y aprovecha las habilidades de numerosas criaturas<br>
+                Y muchas más.
+                <script>
+                    function mostrar(){
+                        document.getElementsByTagName('img')[0].style.display = '';
+                    }
+            
+                    function ocultar(){
+                        document.getElementsByTagName('img')[0].style.display = 'none'
+                    }
+                    function mostrarMensajeBienvenida() {
+                    var mensajeBienvenida = document.getElementById("mensaje-bienvenida");
+                    mensajeBienvenida.style.display = "block";
+                    }
+
+                    function cambiarColorH1() {
+                      var colores = ["black", "blue", "yellow", "red", "purple", "green", "pink", "orange"];
+                      var elementosH1 = document.getElementsByTagName("h1");
+
+                      for (var i = 0; i < elementosH1.length; i++) {
+                        var colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+                        elementosH1[i].style.color = colorAleatorio;
+                      }
+                    }
+
+                    const miAside = document.getElementsByTagName('aside')[0];
+                    function cambiarColorAleatorio() {
+                  const colores = ['initial', 'red', 'yellow', 'blue'];
+                  let randomIndex = Math.floor(Math.random() * colores.length);
+                  miAside.style.backgroundColor = colores[randomIndex];
+                }
+                //VEntana EMERGENTE DE BIENVENIDA
+                window.onload = function() {
+		        	window.alert("¡Bienvenido a la pagina web de SAC 1º ASIR!");
+		        };
+                </script>
+            </div>
+        </aside>
+    </body>   
+</html>
+
+<!--ADIESTRAMIENTO, ENGRAMAS, EFECTOS DE ESTADO Y SUBIR DE NIVEL
+https://ark.fandom.com/es/wiki/Subir_de_nivel
+https://ark.fandom.com/es/wiki/Adiestramiento/Domesticado
+https://ark.fandom.com/es/wiki/Efectos_de_estado
+https://ark.fandom.com/es/wiki/Engramas
+https://ark.fandom.com/es/wiki/ARK_Survival_Evolved_Wiki """"INICIOOOOO""""
+-->
